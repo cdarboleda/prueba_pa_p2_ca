@@ -1,7 +1,5 @@
 package com.uce.edu.demo.service;
 
-import java.math.BigDecimal;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -14,14 +12,8 @@ public class VehiculoServiceImpl implements IVehiculoService{
 	@Autowired
 	private IVehiculoRepository vehiculoRepository;
 	@Override
-	public void crear(String marca, String modelo, String placa, String tipo, BigDecimal precio) {
+	public void crear(Vehiculo v) {
 		// TODO Auto-generated method stub
-		Vehiculo v = new Vehiculo();
-		v.setMarca(marca);
-		v.setModelo(modelo);
-		v.setPlaca(placa);
-		v.setPrecio(precio);
-		v.setTipo(tipo);
 		this.vehiculoRepository.crear(v);
 	}
 

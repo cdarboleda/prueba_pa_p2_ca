@@ -17,7 +17,7 @@ public class VehiculoRepositoryImpl implements IVehiculoRepository{
 	@Override
 	public Vehiculo buscar(String placa) {
 		// TODO Auto-generated method stub
-		System.out.println("Devolviendo vehículo de cedula: "+ placa);
+		System.out.println("Buscando la placa: "+ placa);
 		
 		//Datos de ejemplo porque no hay base de la cual retirar la informacion
 		Vehiculo v = new Vehiculo();

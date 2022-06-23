@@ -13,27 +13,11 @@ public class PropietarioServiceImpl implements IPropietarioService{
 	private IPropietarioRepository propietarioRepository;
 	
 	@Override
-	public void crear(String nombre, String apellido, String cedula) {
+	public void crear(Propietario pro) {
 		// TODO Auto-generated method stub
-		Propietario p = new Propietario();
-		p.setNombre(nombre);
-		p.setApellido(apellido);
-		p.setCedula(cedula);
-		
-		this.propietarioRepository.crear(p);
+		this.propietarioRepository.crear(pro);
 	}
 
-	@Override
-	public Propietario buscar(String cedula) {
-		// TODO Auto-generated method stub
-		return this.propietarioRepository.buscar(cedula);
-	}
-
-	@Override
-	public void actualizar(Propietario p) {
-		// TODO Auto-generated method stub
-		this.propietarioRepository.actualizar(p);
-	}
 
 	@Override
 	public void eliminar(String cedula) {

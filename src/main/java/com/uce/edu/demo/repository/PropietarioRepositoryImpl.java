@@ -26,12 +26,6 @@ public class PropietarioRepositoryImpl implements IPropietarioRepository{
 	}
 
 	@Override
-	public void actualizar(Propietario p) {
-		// TODO Auto-generated method stub
-		System.out.println("Actualizando un propietario: " + p);
-	}
-
-	@Override
 	public void eliminar(String cedula) {
 		// TODO Auto-generated method stub
 		System.out.println("Eliminando un propietario: " +cedula);
